@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/assets/css/results.css" />
+  </head>
+  <body data-theme="system">
+    <div class="container">
+      <div class="topSearch">
+        <div class="logo">
+          <a href="/">Home</a>
+        </div>
+        <div class="searchBar">
+          <form id="searchForm">
+            <input
+              class="searchInput"
+              type="text"
+              name="q"
+              placeholder="Search..."
+              id="searchInput"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div id="results" class="results"></div>
+      <div id="loading" class="loading">Loading...</div>
+    </div>
+    <script src="/assets/js/Search/duck.js"></script>
+  </body>
+</html>

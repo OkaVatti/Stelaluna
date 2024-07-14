@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url(./root.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Mono", "Courier New", monospace;
+  transition: 0.8s ease-in-out;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--bgColor);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topSearch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primColor);
+}
+
+.searchBar {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  background-color: var(--blck);
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  padding: 0 10px;
+  border: 2px solid var(--primColor);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+button {
+  display: none;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  margin-bottom: 20px;
+}
+
+.result-item a {
+  text-decoration: none;
+  color: var(--primColor);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result-item p {
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+.loading {
+  display: none;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 18px;
+}

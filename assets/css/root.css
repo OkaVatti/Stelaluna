@@ -1,0 +1,360 @@
+/* Import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Define themes for light mode and dark mode */
+
+:root {
+  --fFamily: "PT Mono", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  --txColor: #000;
+  --htxColor: #fff;
+  --bgColor: #fff;
+  --fgColor: #000;
+  --primColor: var(--purp);
+
+  --redd: #ff5656;
+  --orng: #ff9a63;
+  --yell: #ffca60;
+  --gree: #a0c980;
+  --aqua: #7ec4cf;
+  --blue: #7aa5ff;
+  --ndgo: #7d7ad1;
+  --purp: #8f65e8;
+  --gray: #7e6d64;
+  --blck: #000;
+  --whit: #fff;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --fFamily: "PT Mono", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  --txColor: #fff;
+  --htxColor: #000;
+  --bgColor: #000;
+  --fgColor: #fff;
+  --primColor: var(--redd);
+
+  --redd: #ff5656;
+  --orng: #ff9a63;
+  --yell: #ffca60;
+  --gree: #a0c980;
+  --aqua: #7ec4cf;
+  --blue: #7aa5ff;
+  --ndgo: #7d7ad1;
+  --purp: #8f65e8;
+  --gray: #7e6d64;
+  --blck: #000;
+  --whit: #fff;
+}
+
+[data-theme="sepia"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  --txColor: rgb(106, 96, 86);
+  --htxColor: #ffe9bd;
+  --bgColor: #f4e8c1;
+  --fgColor: rgb(106, 96, 86);
+  --primColor: var(--gray);
+
+  --redd: #ff7b72;
+  --orng: #ffad5c;
+  --yell: #ffca60;
+  --gree: #a0c980;
+  --aqua: #7ec4cf;
+  --blue: #7aa5ff;
+  --ndgo: #a9b1d6;
+  --purp: #d38aea;
+  --gray: #7e6d64;
+  --blck: #3c2e1e;
+  --whit: #ffe9bd;
+}
+
+[data-theme="sepia-dark"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  --txColor: #ffe9bd;
+  --htxColor: rgb(106, 96, 86);
+  --bgColor: rgb(106, 96, 86);
+  --fgColor: #ffe9bd;
+  --primColor: #ffca60;
+
+  --redd: #ff7b72;
+  --orng: #ffad5c;
+  --yell: #ffca60;
+  --gree: #a0c980;
+  --aqua: #7ec4cf;
+  --blue: #7aa5ff;
+  --ndgo: #a9b1d6;
+  --purp: #d38aea;
+  --gray: #7e6d64;
+  --blck: #3c2e1e;
+  --whit: #ffe9bd;
+}
+
+[data-theme="gruvbox"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use gruvbox colors instead */
+  --txColor: #ebdbb2;
+  --htxColor: #282828;
+  --bgColor: #282828;
+  --fgColor: #ebdbb2;
+  --primColor: #b8bb26;
+
+  --redd: #fb4934;
+  --orng: #fe8019;
+  --yell: #fabd2f;
+  --gree: #b8bb26;
+  --aqua: #8ec07c;
+  --blue: #83a598;
+  --ndgo: #8f86d3;
+  --purp: #d3869b;
+  --gray: #928374;
+  --blck: #282828;
+  --whit: #ebdbb2;
+}
+
+/* gruvbox light mode */
+[data-theme="gruvbox-light"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use gruvbox colors instead */
+  --txColor: #282828;
+  --htxColor: #ebdbb2;
+  --bgColor: #ebdbb2;
+  --fgColor: #282828;
+  --primColor: #b8bb26;
+
+  --redd: #fb4934;
+  --orng: #fe8019;
+  --yell: #fabd2f;
+  --gree: #b8bb26;
+  --aqua: #8ec07c;
+  --blue: #83a598;
+  --ndgo: #8f86d3;
+  --purp: #d3869b;
+  --gray: #928374;
+  --blck: #282828;
+  --whit: #ebdbb2;
+}
+
+[data-theme="tokyonight"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use tokyonight colors instead */
+  --txColor: #a9b1d6;
+  --htxColor: #f1f2f6;
+  --bgColor: #1a1b26;
+  --fgColor: #a9b1d6;
+  --primColor: #7aa2f7;
+
+  --redd: #f7768e;
+  --orng: #ff9e64;
+  --yell: #e0af68;
+  --gree: #9ece6a;
+  --aqua: #7dcfff;
+  --blue: #7aa2f7;
+  --ndgo: #8983e2;
+  --purp: #bb9af7;
+  --gray: #4b5263;
+  --blck: #1a1b26;
+  --whit: #a9b1d6;
+}
+
+/* tokyonight light mode */
+[data-theme="tokyonight-light"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use tokyonight colors instead */
+  --txColor: #383a42;
+  --htxColor: #f8f8f2;
+  --bgColor: #f8f8f2;
+  --fgColor: #383a42;
+  --primColor: #0184bc;
+
+  --redd: #ff79c6;
+  --orng: #ffb86c;
+  --yell: #f3f99d;
+  --gree: #50fa7b;
+  --aqua: #8be9fd;
+  --blue: #0184bc;
+  --ndgo: #bd93f9;
+  --purp: #ff79c6;
+  --gray: #a0a1a7;
+  --blck: #383a42;
+  --whit: #f8f8f2;
+}
+
+/* Nord */
+[data-theme="nord"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use nord colors instead */
+  --txColor: #d8dee9;
+  --htxColor: #2e3440;
+  --bgColor: #2e3440;
+  --fgColor: #d8dee9;
+  --primColor: #88c0d0;
+
+  --redd: #bf616a;
+  --orng: #d08770;
+  --yell: #ebcb8b;
+  --gree: #a3be8c;
+  --aqua: #8fbcbb;
+  --blue: #81a1c1;
+  --ndgo: #8f7ec0;
+  --purp: #b48ead;
+  --gray: #4c566a;
+  --blck: #2e3440;
+  --whit: #d8dee9;
+}
+
+/* Nord light mode */
+[data-theme="nord-light"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use nord colors instead */
+  --txColor: #2e3440;
+  --htxColor: #d8dee9;
+  --bgColor: #d8dee9;
+  --fgColor: #2e3440;
+  --primColor: #88c0d0;
+
+  --redd: #bf616a;
+  --orng: #d08770;
+  --yell: #ebcb8b;
+  --gree: #a3be8c;
+  --aqua: #8fbcbb;
+  --blue: #81a1c1;
+  --ndgo: #8f7ec0;
+  --purp: #b48ead;
+  --gray: #4c566a;
+  --blck: #2e3440;
+  --whit: #d8dee9;
+}
+
+/* Rosé Pine Theme */
+[data-theme="rose-pine"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use rose-pine colors instead */
+  --txColor: #e0def4;
+  --htxColor: #191724;
+  --bgColor: #191724;
+  --fgColor: #e0def4;
+  --primColor: #eb6f92;
+
+  --redd: /* Love */ #eb6f92;
+  --orng: /* Gold */ #f6c177;
+  --yell: /* Rose */ #ebbcba;
+  --gree: /* Pine */ #31748f;
+  --aqua: /* Foam */ #9ccfd8;
+  --blue: /* Iris */ #9ca5d8;
+  --ndgo: /* Base */ #7e6b8f;
+  --purp: /* Orch */ #e58ac9;
+  --gray: /* Moon */ #a39bb9;
+  --blck: /* Char */ #191724;
+  --whit: /* Snow */ #e0def4;
+}
+
+/* Rosé Pine Light Theme */
+[data-theme="rose-pine-dawn"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use rose-pine colors instead */
+  --txColor: #191724;
+  --htxColor: #e0def4;
+  --bgColor: #e0def4;
+  --fgColor: #191724;
+  --primColor: #b4637a;
+
+  --redd: /* Love   */ #b4637a;
+  --orng: /* Gold   */ #ea9d34;
+  --yell: /* Rose   */ #d7827e;
+  --gree: /* Pine   */ #286983;
+  --aqua: /* Foam   */ #56949f;
+  --blue: /* Ocean  */ #9ca5d8;
+  --ndgo: /* Iris   */ #907aa9;
+  --ndgo: /* Base   */ #735a89;
+  --purp: /* Orcher */ #ae6899;
+  --gray: /* Moon   */ #a39bb9;
+  --blck: /* Char   */ #191724;
+  --whit: /* Snow   */ #e0def4;
+}
+
+/* srcery theme */
+[data-theme="srcery"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use srcery colors instead */
+  --txColor: var(--whit);
+  --htxColor: var(--blck);
+  --bgColor: var(--blck);
+  --fgColor: var(--whit);
+  --primColor: var(--blue);
+
+  --redd: #F75341;
+  --orng: #fe8019;
+  --yell: #FED06E;
+  --gree: #8ec07c;
+  --aqua: #83a598;
+  --blue: rgb(123, 158, 204);
+  --ndgo: #5e68c2;
+  --purp: #a272cf;
+  --gray: #928374;
+  --blck: #1c1b1e;
+  --whit: #ebdbb2;
+}
+
+/* Horizon Theme */
+[data-theme="horizon"] {
+  --fFamily: "PT Serif", sans-serif;
+  --fSsize: 16px;
+  --fWeight-normal: 400;
+  --fWeight-bold: 700;
+  /* Use horizon colors instead */
+  --txColor: #f1f1f0;
+  --htxColor: #16161c;
+  --bgColor: #16161c;
+  --fgColor: #f1f1f0;
+  --primColor: #F09383;
+
+  --redd: #e95678;
+  --orng: #F09383;
+  --yell: #FAB795;
+  --gree: #27D796;
+  --aqua: #21BFC2;
+  --blue: #2599bc;
+  --ndgo: #7272d1;
+  --purp: #B877DB;
+  --gray: #b8b8b8;
+  --blck: #16161c;
+  --whit: #FDF0ED;
+}

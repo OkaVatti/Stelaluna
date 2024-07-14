@@ -1,0 +1,105 @@
+@import url(./root.css);
+
+#themeButton {
+  position: absolute;
+  margin: 2em 2em 0 0;
+  right: 0;
+  top: 0;
+  padding: 1vh;
+  color: var(--fgColor);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+#themeButton:hover {
+  transform: scale(104%);
+  color: var(--bgColor);
+  background-color: var(--primColor);
+}
+
+#themeIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.themeCard {
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: max-content;
+  max-width: 50%;
+  z-index: 1000;
+  background: var(--bgColor);
+  border: var(--fgColor) 4px solid;
+  padding: 0.5em;
+  transition: ease-in-out 0.8s;
+  color: var(--fgColor);
+}
+
+.themeCard:hover {
+  background: var(--bgColor);
+  transform: scale(104%);
+}
+
+.themeCard ul li {
+  justify-content: center;
+  background: var(--fgColor);
+  border: var(--bgColor) 2px solid;
+  display: inline-flex;
+  padding: 0.4em;
+  margin: 4px;
+  transition: ease-in-out 0.8s;
+}
+
+.themeCard ul li:hover {
+  background: var(--primColor);
+  color: var(--bgColor);
+}
+
+.themeCardCenter ul {
+  text-align: center;
+  margin: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+#popoverPanel ul {
+  display: flexbox;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  border: solid 4px var(--fgColor);
+  border-radius: 8px;
+  position: absolute;
+  width: 50%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  top: 6vh;
+  left: 0;
+  right: 0;
+  background: var(--bgColor);
+  z-index: 1000;
+}
+
+#popoverPanel ul li {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  text-align: center;
+  border-radius: 8px;
+  padding: 1vh;
+  background-color: var(--bgColor);
+}
+
+#popoverPanel ul li button {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
